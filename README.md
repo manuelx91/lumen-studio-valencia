@@ -9,7 +9,8 @@ Sitio web ficticio de Lumen Studio, un estudio creativo digital situado en **Cal
 - `views/presupuesto.html`: formulario de presupuesto con validación HTML5.
 - `views/contacto.html`: datos de contacto y mapa.
 - `css/styles.css`: estilos responsive.
-- `imagenes/mapa.svg`: mapa ilustrado local.
+- `imagenes/mapa-valencia.png`: mapa raster de la ubicación de la empresa.
+- `imagenes/producto-*.jpg`: fotografías de los trabajos de la galería.
 
 ## Direcciones de entrega
 

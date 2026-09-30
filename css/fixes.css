@@ -1,0 +1,98 @@
+/* Correcciones de evaluación: layout, imágenes, iconos y contenido */
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.site-footer {
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+.brand-copy {
+  display: inline-block;
+}
+
+.project-image {
+  display: block;
+  height: 440px;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-image img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  width: 100%;
+}
+
+.project-image:hover img {
+  transform: scale(1.04);
+}
+
+.project-image::after {
+  background: linear-gradient(180deg, rgba(32, 34, 31, 0.35), transparent 35%);
+  content: "";
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.project-image .project-tag {
+  color: #ffffff;
+  left: 28px;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+}
+
+.socials svg {
+  fill: none;
+  height: 17px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+  width: 17px;
+}
+
+.contact-block address span,
+.contact-block > p span {
+  display: block;
+}
+
+.privacy-copy {
+  color: #777971;
+  font-size: 0.82rem !important;
+  margin-top: 14px;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@media (max-width: 800px) {
+  .project-image {
+    height: 340px;
+  }
+}
